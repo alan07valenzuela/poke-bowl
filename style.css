@@ -1,0 +1,194 @@
+@font-face {
+    font-family: "Itim";
+    src: url("assets/Itim/Itim-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+p {
+    font-size: 1.2em;
+}
+body {
+    background-color: rgb(243, 243, 243);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    font-family: "Itim", Verdana, Geneva, sans-serif;
+}
+header,
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/*   LATERAL BAR   */
+header {
+    border: 2px solid black;
+    box-sizing: border-box;
+    flex: 1;
+    justify-content: space-evenly;
+    padding: 1% 5%;
+}
+header h1,
+header li {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+    font-weight: bold;
+}
+header p {
+    margin: 0.5em 0;
+}
+header menu {
+    list-style: none;
+    padding-inline-start: 0;
+    margin: 0;
+}
+menu a {
+    text-decoration: none;
+    color: black;
+}
+header .logo {
+    width: 80%;
+}
+header .map {
+    box-shadow: 0 0 3px rgba(142, 142, 142, 0.559);
+    aspect-ratio: 5/4;
+    width: 100%;
+}
+#contact-us {
+    transition: ease 0.5s;
+}
+#contact-us:hover {
+    text-shadow: 0 0 20px #ff1a16;
+    cursor: pointer;
+}
+
+/*   MAIN CONTENT   */
+main {
+    flex: 5;
+    align-items: center;
+}
+
+/*   VIDEO   */
+video {
+    width: 100%;
+    height: 55vh;
+    object-fit: cover;
+}
+
+/*   POKE ORDER AND DEFINITION   */
+.poke-order-and-definition {
+    border: 2px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.poke-order-and-definition h1 {
+    color: white;
+    font-size: 3.5em;
+    margin: 0;
+}
+.poke-order,
+.poke-definition {
+    min-height: 17em;
+    height: 20vw;
+    margin: 10px;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+/*   POKE ORDER   */
+.poke-order {
+    background-color: #2b78e4;
+    color: white;
+    aspect-ratio: 2;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.poke-order h1 {
+    text-align: center;
+}
+.poke-ingredient:first-of-type {
+    padding-left: 30px;
+}
+.poke-ingredient:nth-of-type(2) {
+    padding-left: 90px;
+}
+.poke-ingredient:last-of-type {
+    padding-left: 150px;
+}
+.poke-ingredient {
+    flex: 1;
+    display: flex;
+    transition: ease 0.5s;
+    align-items: center;
+}
+.poke-ingredient p {
+    font-size: 2em;
+    margin: 0;
+    cursor: default;
+}
+.ingredient-number {
+    background-color: white;
+    color: #2b78e4;
+    width: 1.2em;
+    height: 1.2em;
+    font-size: 2.9em;
+    margin-right: 30px;
+    border-radius: 50px;
+    text-align: center;
+}
+.poke-ingredient:hover {
+    background-color: #5f99ea;
+}
+.poke-ingredient .ingredients {
+    font-size: 1.4em;
+    font-style: italic;
+}
+
+/*   POKE DEFINITION   */
+.poke-definition {
+    background-color: #cf2a27;
+    color: white;
+    aspect-ratio: 1;
+    padding: 20px;
+    position: relative;
+}
+.poke-definition h1 {
+    display: inline;
+}
+.poke-definition i,
+.poke-definition p {
+    font-size: 1.3em;
+}
+#poke-pronunciation {
+    width: 9em;
+}
+#pronunciation-sound {
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 100px;
+    transition: ease 0.5s;
+    opacity: 85%;
+    height: 3em;
+    padding: 3px;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+#pronunciation-sound:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
+#pronunciation-sound:active {
+    opacity: 50%;
+}
+.poke-definition > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

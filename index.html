@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="assets/logo.png">
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+        <title>Poke Bowl</title>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="assets/logo.png" alt="Poke Bowl logo" />
+            <nav>
+                <menu>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Catering</a></li>
+                </menu>
+            </nav>
+            <section>
+                <h1>Hours</h1>
+                <p>
+                    mon - fri
+                    <time datetime="11:00">11 am</time>
+                    -
+                    <time datetime="22:00">10 pm</time>
+                    <br />
+                    sat
+                    <time datetime="12:00">12 pm</time>
+                    -
+                    <time datetime="01:00">1 am</time>
+                    <br />
+                    sun
+                    <time datetime="12:00">12 pm</time>
+                    -
+                    <time datetime="21:00">9 pm</time>
+                </p>
+            </section>
+            <section>
+                <h1>Location</h1>
+                <img class="map" src="assets/map.png" alt="Poke Bowl Location Map" />
+            </section>
+            <section>
+                <h1 id="contact-us">Contact Us</h1>
+            </section>
+        </header>
+        <main>
+            <video src="assets/video.mp4" width="200" controls muted autoplay loop></video>
+            <div class="poke-order-and-definition">
+                <div class="poke-order">
+                    <h1>Poke your way</h1>
+                    <div class="poke-ingredient">
+                        <span class="ingredient-number">1</span>
+                        <span>
+                            <p>choose your protein</p>
+                            <p class="ingredients" hidden>salmon, tuna, tofu</p>
+                        </span>
+                    </div>
+                    <div class="poke-ingredient">
+                        <span class="ingredient-number">2</span>
+                        <span>
+                            <p>pick your base</p>
+                            <p class="ingredients" hidden>rice, quinoa, soba noodles</p>
+                        </span>
+                    </div>
+                    <div class="poke-ingredient">
+                        <span class="ingredient-number">3</span>
+                        <span>
+                            <p>select a marinade</p>
+                            <p class="ingredients" hidden>ponzu, sriracha aoili, sesame miso</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="poke-definition">
+                    <div>
+                        <h1>poke</h1>
+                        <img id="poke-pronunciation" src="assets/pronounciation.png" alt="Poke pronunciation" />
+                    </div>
+                    <i>noun</i>
+                    <p>Pronounced (Po-kay)</p>
+                    <p>A popular Hawaiian dish of marinated, diced raw fish served over rice</p>
+                    <img id="pronunciation-sound" src="assets/sound-dark.png" alt="pronunciation button" />
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
